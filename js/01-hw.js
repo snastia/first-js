@@ -65,8 +65,16 @@ alert(a10);
 
 // 8
 
-const S = 0;
+let S = 0;
 const height = "23см";
 const width = "10см";
-S = height * width;
+S = "23" * "10";
 console.log(S);
+
+// 9
+
+let V = 0;
+const heightC = "10м";
+const dC = "4м";
+V = "4" * "10";
+console.log(V);
