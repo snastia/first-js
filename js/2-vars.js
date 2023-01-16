@@ -13,7 +13,7 @@ let elementalHeight = "50.12px";
 const res = Number.parseFloat(elementalHeight);
 // console.log(res);
 
-// флоат також враховуэ крапку, а парсе інт - ні
+// флоат також враховує крапку, а парсе інт - ні
 
 let salary = 1300.16472;
 // console.log(salary.toFixed(2));
