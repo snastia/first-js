@@ -36,6 +36,26 @@ console.log(Math.max(2, 34, 99, 3, 22, 36, 733, 18));
 const max = 19;
 const min = 3;
 
-const random = Math.random() * (max - min) + min;
+const random = Math.random(3, 19);
+console.log(random);
+
+// 5
+
+const result = 5+5+"5";
+console.log(result);
+
+// 6
+
+const email = snastia.m"@"gmail.com;
+console.log(email.length);
+console.log(email.includes("@"));
+
+// 7
+
+const his = "My";
+const nickname = "name";
+const real = "is";
+const fullName = his + nickname + real + `Viktor`;
+console.log(fullName);
 
 
