@@ -46,16 +46,24 @@ console.log(result);
 
 // 6
 
-const email = snastia.m"@"gmail.com;
+const email = "snastia.m@gmail.com";
 console.log(email.length);
 console.log(email.includes("@"));
 
 // 7
 
-const his = "My";
-const nickname = "name";
-const real = "is";
+const his = "My ";
+const nickname = "name ";
+const real = "is ";
 const fullName = his + nickname + real + `Viktor`;
 console.log(fullName);
+
+// 8
+
+const userName = "Олександро!";
+const payment = "300 гривень";
+
+const message = `Дякуємо, ${userName} До сплати ${payment}`;
+alert(message);
 
 
