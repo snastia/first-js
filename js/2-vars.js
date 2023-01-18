@@ -39,7 +39,7 @@ const res1 = base ** power;
 // const num1 = prompt("число");
 // const powe = prompt("Степінь");
 // console.log(Math.pow(num1, powe));
-const max = 10;
+const max = 19;
 const min = 5;
 const random = Math.random() * (max - min) + min;
 
