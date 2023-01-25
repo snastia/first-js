@@ -1,10 +1,10 @@
 // 1
 
-const max = 99;
-const min = 55;
-const number  = prompt("чи попадає ваше число у діапазон з 55 до 99?")
+const max1 = 99;
+const min2 = 55;
+const number1  = prompt("чи попадає ваше число у діапазон з 55 до 99?")
 let message;
-if(number > 55 && number < 99){
+if(number1 > 55 && number1 < 99){
   message = prompt("Число потрапляє у діапазон");
 } else{
   message = prompt("Число не потрапляє у діапазон");
