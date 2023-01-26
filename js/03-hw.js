@@ -45,7 +45,6 @@ const max = 5;
 const min = 1;
 
 const random = Math.random(1, 5);
-const mistake = "Error";
 if(random === 1){
     console.log(random);
 } else if(random === 2){
@@ -57,30 +56,30 @@ if(random === 1){
 } else if(random === 5){
   console.log(random);
 } else{
-    console.log(mistake);
+    alert("mistake");
 }
 
 // 5
 
 let lang = "";
-const  number = 3;
+const number = "ua";
 
 switch (number) {
-   case fr:
+   case "fr":
     lang = "Janvier";
     console.log(lang);
     break;
 
-    case en:
+    case "en":
         lang = "January";
         console.log(lang);
         break;
-               case ua:
+               case "ua":
               lang = "Січень";
               console.log(lang);
               break;
 
-        case ru:
+        case "ru":
             lang = "Январь";
             console.log(lang);
             break;
