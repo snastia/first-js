@@ -16,20 +16,28 @@ const first = 0-16;
 const second = 17-60;
 const third = 61-100;
 const Maksim = 55;
-if(Maksim && second){
+if(Maksim > 0 && Maksim < 16){ 
+  alert("Ви у дитячій віковій групі");
+} else if(Maksim > 17 && Maksim < 60){
   alert("Ви у дорослій віковій групі");
+} else if(Maksim > 61 && Maksim < 100){
+ alert("Ви у групі пенсіонерів");
 } else{
     alert("Error");
 }
 
 // 3
 
-const fullName = "Скрицька Анастасія";
-if(fullName.length){
-  alert(fullName.length);
+const surname = "Скрицька";
+const MyName = "Анастасія";
+if(surname.length){
+  alert(surname.length);
+} else if(MyName.length){
+ alert(MyName.length);
 } else{
     alert("УПС");
 }
+alert(surname.length + MyName.length);
 
 // 4
 
@@ -38,8 +46,16 @@ const min = 1;
 
 const random = Math.random(1, 5);
 const mistake = "Error";
-if(random){
+if(random === 1){
     console.log(random);
+} else if(random === 2){
+  console.log(random);
+} else if(random === 3){
+    console.log(random);
+} else if(random === 4){
+  console.log(random);
+} else if(random === 5){
+  console.log(random);
 } else{
     console.log(mistake);
 }
@@ -50,21 +66,21 @@ let lang = "";
 const  number = 3;
 
 switch (number) {
-   case 1:
+   case fr:
     lang = "Janvier";
     console.log(lang);
     break;
 
-    case 2:
+    case en:
         lang = "January";
         console.log(lang);
         break;
-               case 3:
+               case ua:
               lang = "Січень";
               console.log(lang);
               break;
 
-        case 4:
+        case ru:
             lang = "Январь";
             console.log(lang);
             break;
