@@ -43,5 +43,11 @@ console.log(styles);
 const classic = "Класика";
 const idx = styles.indexOf(classic);
 
-styles.splice(idx, 1, classic);
+styles.splice(1, 1, classic);
 console.log(styles);
+
+console.log(styles.slice(1));
+
+const newWords = [];
+newWords.push("Реп", "Реггі", "Класика", "Рок-н-рол");
+console.log(newWords);

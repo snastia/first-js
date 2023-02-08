@@ -58,13 +58,13 @@
   /*
    * Видалення (по індексу), метод indexOf()
    */
-//   const cardToRemove  = 'Карточка-3';
+  const cardToRemove  = 'Карточка-3';
 
-//   const index = cards.indexOf(cardToRemove);
-//   console.log(index);
+  const index = cards.indexOf(cardToRemove);
+  console.log(index);
 
-//   cards.splice(index, 1);
-//   console.log(cards);
+  cards.splice(index, 1);
+  console.log(cards);
 
   /*
    * Додавання (по індексу)
