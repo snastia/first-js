@@ -105,12 +105,12 @@
 
 // Отримуємо імена всіх друзів
 
-const friends = [
-    { name: 'Mango', online: false },
-    { name: 'Kiwi', online: true },
-    { name: 'Poly', online: false },
-    { name: 'Ajax', online: false },
-  ];
+// const friends = [
+//     { name: 'Mango', online: false },
+//     { name: 'Kiwi', online: true },
+//     { name: 'Poly', online: false },
+//     { name: 'Ajax', online: false },
+//   ];
 
 // const getAllNames = function(allFriends){
 //   const allNames = [];
