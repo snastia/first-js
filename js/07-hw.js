@@ -30,18 +30,46 @@ console.log(sum);
 // 3
 
 const calculator = {
-    read(a, b) {
-         prompt("Введіть перше числове значення");
-        a = (number);
-          prompt("Введіть друге числове значення");
-        b = (number);
-        console.log(number);
-    },
-    sum() {
-     
-    },
-    mult() {
-     
-    }
+    a: null,
+    b: null,
+  read(a, b) {
+    
+      this.a = prompt("Введіть перше числове значення");
+  
+      this.b = prompt("Введіть друге числове значення");
+      
+      console.log(this.a, this.b);
+  },
+  a: null,
+  b: null,
+  sum() {
+  const sum = Math.pow(this.a + this.b);
+  console.log(this.a + this.b);
+  },
+  a: null,
+  b: null,
+  mult() {
+    const mult = Math.pow(this.a * this.b);
+    console.log(this.a * this.b);
+  }
 }
 
+calculator.read();
+calculator.sum();
+calculator.mult();
+
+// 4
+
+const cafe = {
+    name: "Republic",
+    width: 200,
+    height: 300,
+    personal: 5,
+    hr: true 
+}
+
+const entries = Object.entries(cafe);
+console.log(entries);
+
+const mult2 = Math.pow((200 + 300) * 2);
+console.log((200 + 300) * 2);
