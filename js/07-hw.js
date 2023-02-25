@@ -32,14 +32,14 @@ console.log(sum);
 const calculator = {
     a: null,
     b: null,
-  read(a, b) {
+    read(a, b) {
     
       this.a = prompt("Введіть перше числове значення");
   
       this.b = prompt("Введіть друге числове значення");
       
       console.log(this.a, this.b);
-  },
+    },
   a: null,
   b: null,
   sum() {
