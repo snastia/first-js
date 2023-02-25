@@ -22,10 +22,15 @@ const salaries = {
     Pete: 130
 }
 
-let sum;
+const sum = Object.values(salaries);
 
-sum = 100 + 160 + 130;
-console.log(sum);
+let total = 0;
+
+for (const sums of sum) {
+    total += sums;
+}
+
+console.log(total);
 
 // 3
 
@@ -40,14 +45,10 @@ const calculator = {
       
       console.log(this.a, this.b);
     },
-  a: null,
-  b: null,
   sum() {
   const sum = Math.pow(this.a + this.b);
   console.log(this.a + this.b);
   },
-  a: null,
-  b: null,
   mult() {
     const mult = Math.pow(this.a * this.b);
     console.log(this.a * this.b);
@@ -71,5 +72,5 @@ const cafe = {
 const entries = Object.entries(cafe);
 console.log(entries);
 
-const mult2 = Math.pow((200 + 300) * 2);
-console.log((200 + 300) * 2);
+const mult2 = Math.pow((cafe.width + cafe.height) * 2);
+console.log((cafe.width + cafe.height) * 2);
