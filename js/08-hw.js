@@ -63,14 +63,18 @@ const cart = {
      }
      this.items.push(newProduct)
    },
-   remove(productName) {delete items [{productName}]},
+   remove(productName) {
+    delete items [{productName}]
+  },
 
-   clear() {},
+   clear() {
+    this.items = [];
+   },
 
    countTotalPrice() {},
 
    increaseQuantity(productName) {},
-   
+
    decreaseQuantity(productName) {},
  };
  
