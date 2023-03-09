@@ -467,11 +467,22 @@ const email = [
 ]
 
 const getUserWithEmail = email.find((users, email) => {
-    return 
+    if(users.email === 'shereeanthony@kog.com'){
+      console.log(users); 
+    } else if(users.email === 'elmahead@omatom.com'){
+      console.log(users)
+    } 
   });
   
-  console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
-  console.log(getUserWithEmail(users, 'elmahead@omatom.com'))
+ 
 
 //   6
 
+const getUsersWithAge = (users, min, max) => {
+    
+  };
+  
+  console.log(getUsersWithAge(users, 20, 30)); // [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
+  
+  console.log(getUsersWithAge(users, 30, 40));
+  // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Blackburn Dotson, об'єкт Sheree Anthony]
