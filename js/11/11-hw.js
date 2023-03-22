@@ -12,7 +12,7 @@ console.log(textEl)
 
 // 3
 
-const listEl = document.querySelectorAll(".list-item")
+const listEl = document.querySelector(".list-item")
 console.log(listEl)
 
 // 4
@@ -20,8 +20,14 @@ console.log(listEl)
 const imageEl = document.querySelector(".image")
 imageEl.src = "https://images.pexels.com/photos/7521210/pexels-photo-7521210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 
-// 5
+// 7
 
-// const sectionTitleElleEl) = document.querySelector(".section-title"[-1])
-// sectionTitleEl.textContent = "Новий заголовок"
-// console.log(sectionTitleEl)
+const footerTextEl = document.querySelector(".footer-text")
+footerTextEl.classList.add("highlight")
+
+console.log(footerTextEl)
+
+// 8
+
+const navEl = document.querySelector(".navigation")
+console.log(navEl)
