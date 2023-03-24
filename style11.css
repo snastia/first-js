@@ -1,0 +1,16 @@
+.article{
+    border: 1px solid blue;
+    font-size: 18px;
+    padding: 7px;
+    color: darkgreen;
+    width: 150px;
+}
+.title{
+  margin: 0;
+  background-color: darkgrey;
+}
+.link{
+    text-decoration: none;
+    color: firebrick;
+    font-size: 26px;
+}

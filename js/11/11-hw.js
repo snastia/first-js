@@ -20,12 +20,32 @@ console.log(listEl)
 const imageEl = document.querySelector(".image")
 imageEl.src = "https://images.pexels.com/photos/7521210/pexels-photo-7521210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 
+// 5
+
+const sectionTitleEl = document.querySelectorAll(".section-title")
+console.log(sectionTitleEl)
+
+const lastIndex = sectionTitleEl.length - 1
+
+sectionTitleEl[lastIndex].textContent = "Новий заголовок"
+
+// 6
+
+const tableCellEl = document.querySelectorAll(".section-title")
+console.log(tableCellEl)
+
+const index = tableCellEl.length - 1
+
+tableCellEl[index].textContent = "Оновлене значення"
+
 // 7
 
-const footerTextEl = document.querySelector(".footer-text")
-footerTextEl.classList.add("highlight")
-
+const footerTextEl = document.querySelectorAll(".footer-text")
 console.log(footerTextEl)
+
+for (const El of footerTextEl) {
+    El.classList.add("highlight")
+}
 
 // 8
 
