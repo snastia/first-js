@@ -64,18 +64,54 @@ const cart = {
      this.items.push(newProduct)
    },
    remove(productName) {
-    delete items [{productName}]
+    let len = 0
+    for(const sigm of this.items){
+        if(this.items[len].name === productName){
+            if(this.items[len].quantity > 1){
+                this.items[len].quantity--
+                return
+            }else{
+                this.items.splice(len,len +1)
+                return
+            }
+        }
+        len++
+    }
   },
 
    clear() {
     this.items = [];
    },
 
-   countTotalPrice() {},
+   countTotalPrice() {
+    let total = 0
+    for(const sig of this.items){
+        total+=sig.price
+    }
+    console.log(total)
+   },
 
-   increaseQuantity(productName) {},
+   increaseQuantity(productName) {
+    let len = 0
+    for(const incr of this.items){
+        if(this.items[len].name === productName){
+            this.items[len].quantity++
+            return
+        }
+        len++
+    }
+   },
 
-   decreaseQuantity(productName) {},
+   decreaseQuantity(productName) {
+    let lent = 0
+        for(const incr of this.items){
+            if(this.items[lent].name === productName){
+                this.items[lent].quantity--
+                return
+            }
+            lent++
+        }
+   },
  };
  
 
