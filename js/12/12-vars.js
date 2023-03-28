@@ -135,6 +135,6 @@ const containerEl = document.querySelector(".site-nav")
 containerEl.insertAdjacentHTML("beforebegin", `<li class="site-nav__item">
 <a href="" class="site-nav__link">Про нас</a>
 </li>`)
-containerEl.insertAdjacentHTML("afterend", `<li class="site-nav__item">
+containerEl.insertAdjacentHTML("afterenda", `<li class="site-nav__item">
 <a href="" class="site-nav__link">Кабінет</a>
 </li>`)
