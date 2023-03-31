@@ -1,25 +1,3 @@
-// 1
-
-const itemsEl = document.querySelectorAll("#categories > .item")
-
-
-// 2
-
-const ingredientsListEl = document.querySelector(".ingredients")
-
-const ingredients = [
-    'Картопля',
-    'Гриби',
-    'Часник',
-    'Помідори',
-    'Зелень',
-    'Приправи',
-  ];
-
-//   3
-
-const listEl = document.querySelector(".gallery")
-
 const images = [
     {
       url:
@@ -37,3 +15,11 @@ const images = [
       alt: 'Group of Horses Running',
     },
   ];
+
+  const galleryEl = document.querySelector("#gallery")
+
+  const imagesEl = images.map((image) => {
+    return `<li> <img src="${image.url}" alt="${image.alt}"> </li>`
+  }).join("")
+
+  galleryEl.insertAdjacentHTML("afterbegin", imagesEl)
