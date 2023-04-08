@@ -55,6 +55,7 @@
 // }
 
 
+// відкривається і закривається модалка, якщо нажимати по бекдропу
 
 const backdrop = document.querySelector(".js-backdrop")
 const openBtn = document.querySelector('[data-action="open-modal"]')
@@ -63,12 +64,14 @@ const body = document.querySelector("body")
 
 openBtn.addEventListener("click", () => {
     body.classList.add("show-modal")
+    window.addEventListener("keydown" , onModalEscClose);
 })
 
 closeBtn.addEventListener("click", onBtnClose)
 
 function onBtnClose() {
   body.classList.remove("show-modal")
+  window.removeEventListener("keydown" , onModalEscClose);
 }
 
 backdrop.addEventListener("click", onBackDrop)
@@ -79,4 +82,10 @@ function onBackDrop(event) {
     } 
 }
 
-// відкривається і закривається модалка, якщо нажимати по бекдропу
+
+
+function onModalEscClose(evt){
+if (evt.code === "Escape"){
+    onBtnClose()
+}
+};

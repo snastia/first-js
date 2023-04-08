@@ -11,7 +11,7 @@ btnEl.addEventListener("click", (event) => {
    }
 })
 
-// // 2
+// 2
 
 const btnSecondEl = document.querySelector(".second-button")
 console.log(btnSecondEl)
